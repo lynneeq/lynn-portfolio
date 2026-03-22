@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&family=DM+Mono:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #1c1917;
+  --paper: #fafaf9;
+  --muted: #78716c;
+  --accent: #292524;
+  --border: #e7e5e4;
+  --tag-bg: #f5f5f4;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-stone-50 text-stone-900 font-sans;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amiri Quran', Georgia, serif;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background: #292524;
+    color: #fafaf9;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-sm font-sans font-medium text-stone-500 hover:text-stone-900 transition-colors duration-200;
+    letter-spacing: 0.03em;
+  }
+
+  .tag-pill {
+    @apply inline-block text-xs font-mono font-medium px-2.5 py-1 rounded-full bg-stone-100 text-stone-600;
+    letter-spacing: 0.04em;
+  }
+
+  .badge-new {
+    @apply inline-block text-xs font-mono font-medium px-2 py-0.5 rounded bg-stone-900 text-stone-50;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .section-label {
+    @apply text-xs font-mono font-medium text-stone-400 uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 text-sm font-medium text-stone-900 border border-stone-900 px-5 py-2.5 rounded-full hover:bg-stone-900 hover:text-stone-50 transition-all duration-200;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors duration-200;
+  }
+
+  /* Animated underline for links */
+  .link-underline {
+    @apply relative;
+    background: linear-gradient(currentColor, currentColor) bottom / 0 2px no-repeat;
+    transition: background-size 0.3s ease;
+  }
+  .link-underline:hover {
+    background-size: 100% 2px;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--paper); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+/* Fade-in animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fadeUp 0.6s ease forwards; }
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
