@@ -43,7 +43,7 @@ function MediaBlock({ media }: { media: MediaItem }) {
 function MediaOrPair({ media }: { media: MediaItem }) {
   if (media.pair) {
     return (
-      <div className="grid grid-cols-2 gap-4 my-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
         <MediaBlock media={media} />
         <MediaBlock media={media.pair} />
       </div>
@@ -122,7 +122,7 @@ export default async function ProjectDetailPage({ params }: Props) {
               <div className="grid grid-cols-3 gap-3 rounded-2xl bg-stone-100 p-8 mb-12">
                 {content.overview.stats.map((stat) => (
                   <div key={stat.label} className="text-center">
-                    <p className="font-serif text-3xl md:text-4xl font-bold text-stone-900 mb-1">{stat.value}</p>
+                    <p className="font-serif text-lg md:text-3xl font-bold text-stone-900 mb-1">{stat.value}</p>
                     <p className="text-xs text-stone-500 font-mono leading-snug">{stat.label}</p>
                   </div>
                 ))}

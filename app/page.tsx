@@ -5,22 +5,22 @@ import ProjectCard from "@/components/ProjectCard";
 
 const values = [
   {
-    icon: <span className="text-2xl">&#x1F465;</span>,
+    icon: <span className="text-base leading-none">&#x1F465;</span>,
     title: "Cross-functional collaboration",
     body: "I work closely with PMs, engineers, and data teams to turn ideas into shipped features, aligning with product OKRs.",
   },
   {
-    icon: <span className="text-2xl">&#x1F4CA;</span>,
+    icon: <span className="text-base leading-none">&#x1F4CA;</span>,
     title: "Research ownership",
     body: "I lead both qualitative and quantitative user research and turn findings into clear product decisions that teams can act on.",
   },
   {
-    icon: <span className="text-2xl">&#x1F4BB;</span>,
+    icon: <span className="text-base leading-none">&#x1F4BB;</span>,
     title: "Experience design",
     body: "I design flows and interfaces that elevate user experience, with explicit rationale for interaction, layout, and states.",
   },
   {
-    icon: <span className="text-2xl">&#x2728;</span>,
+    icon: <span className="text-base leading-none">&#x2728;</span>,
     title: "Innovation driven by curiosity",
     body: "I experiment with new tools and technology to solve user and business problems.",
   },

@@ -487,7 +487,7 @@ export const projects: Project[] = [
             ],
             mediaList: [
               { type: "image", src: "/images/peanut-optimise-journeys.avif", caption: "Optimised send/claim user journeys" },
-              { type: "image", src: "/images/peanut-send-iter2.avif", caption: "Send pages iteration 02" },
+              { type: "image", src: "/images/peanut-send-iter2.avif", caption: "Send pages iterations" },
               { type: "image", src: "/images/peanut-instructional-copy.avif", caption: "Add instructional and error copies to guide users" },
               { type: "image", src: "/images/peanut-custom-upload.avif", caption: "Add customised message upload when sending links" },
             ],
@@ -677,7 +677,7 @@ export const projects: Project[] = [
         ],
         stats: [
           { value: "85%", label: "user satisfaction rate" },
-          { value: "$10,000", label: "Kickstarter fundraising goal achieved" },
+          { value: "$10k", label: "Kickstarter fundraising goal achieved" },
           { value: "24%", label: "user growth" },
         ],
       },
