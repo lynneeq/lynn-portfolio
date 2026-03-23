@@ -155,7 +155,7 @@ export const projects: Project[] = [
               "Used Lovable to rapidly scaffold the Marginalia UI and wire up an AI generation pipeline.",
               "Designed the pipeline with four key capabilities: timestamp traceability, one-page takeaway generator, auto-generate quotes, and a conversational AI layer.",
             ],
-            media: { type: "image", src: "/images/marginalia-four-capabilities.png", caption: "Four key capabilities of the AI pipeline" },
+            media: { type: "image", src: "/images/marginalia-four-capabilities.png", caption: "Four key capabilities of the AI pipeline", pair: { type: "image", src: "/images/marginalia-four-refinements.png", caption: "Four UX refinements from user testing" } },
           },
           {
             id: "stage-3",
@@ -165,7 +165,6 @@ export const projects: Project[] = [
               "Synthesized feedback via affinity mapping to uncover friction points.",
               "Iterated on interaction accessibility, feedback and system status, editable sections, and safer AI edits.",
             ],
-            media: { type: "image", src: "/images/marginalia-four-refinements.png", caption: "Four UX refinements from user testing" },
           },
           {
             id: "stage-4",
@@ -435,6 +434,9 @@ export const projects: Project[] = [
     sections: [
       { id: "overview", label: "Overview" },
       { id: "process", label: "User Journey Mapping" },
+      { id: "ideation", label: "Ideation" },
+      { id: "design-system", label: "Design System" },
+      { id: "testing", label: "Testing" },
       { id: "reflection", label: "Reflection" },
     ],
     content: {
@@ -568,7 +570,7 @@ export const projects: Project[] = [
         stats: [
           { value: "2nd", label: "SocialFi Track, ETH London Hackathon" },
           { value: "$5,000", label: "Flare Blockchain bounty winner" },
-          { value: "300 CNY", label: "706 Creator Community bounty winner" },
+          { value: "1st", label: "706 Creator Community bounty winner" },
         ],
       },
       process: {
@@ -656,14 +658,14 @@ export const projects: Project[] = [
     prototypeUrl: "https://www.oceansideperspective.org",
     sections: [
       { id: "overview", label: "Overview" },
-      { id: "process", label: "Design Process" },
+      { id: "process", label: "Process" },
       { id: "reflection", label: "Reflection" },
     ],
     content: {
       intro:
         "As the chief designer at Oceanside Perspective (OP), a non-profit knowledge-sharing organization, I led a diverse international team to develop OP's branding identity, including designing the logo, launching a digital learning platform, and creating social media templates to support its Kickstarter fundraising campaign.",
       overview: {
-        background:
+        problem:
           "Oceanside Perspective is a cohesive brand identity and digital learning platform for a non-profit so that its ocean-themed mission and innovative content are clearly communicated and inspire deep, intergenerational engagement while effectively supporting fundraising through a unified marketing strategy.",
         solutionPoints: [
           "Logo design: a message in a bottle to capture the essence of connecting different generations through a simple yet powerful visual.",
