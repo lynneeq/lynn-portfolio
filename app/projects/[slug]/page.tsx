@@ -179,7 +179,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             </h2>
             <div className="space-y-14">
               {content.process.steps.map((step, i) => (
-                <div key={step.id} className="relative pl-12">
+                <div key={step.id} id={step.id} className="relative pl-12 scroll-mt-24">
                   <div className="absolute left-0 top-0.5 w-7 h-7 rounded-full border border-stone-300 flex items-center justify-center font-mono text-xs text-stone-500 flex-shrink-0">
                     {i + 1}
                   </div>

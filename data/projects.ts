@@ -666,7 +666,9 @@ export const projects: Project[] = [
         "As the chief designer at Oceanside Perspective (OP), a non-profit knowledge-sharing organization, I led a diverse international team to develop OP's branding identity, including designing the logo, launching a digital learning platform, and creating social media templates to support its Kickstarter fundraising campaign.",
       overview: {
         problem:
-          "Oceanside Perspective is a cohesive brand identity and digital learning platform for a non-profit so that its ocean-themed mission and innovative content are clearly communicated and inspire deep, intergenerational engagement while effectively supporting fundraising through a unified marketing strategy.",
+          "Oceanside Perspective (OP), a non-profit knowledge-sharing organization, lacked a cohesive brand identity and digital presence that effectively communicated its ocean-themed mission, engaged a diverse global audience, and supported its fundraising efforts. The absence of unified visuals and strategy made it difficult for OP to build recognition, inspire intergenerational participation, and attract supporters to its learning initiatives.",
+        goal:
+          "To develop a cohesive brand identity and digital learning platform for Oceanside Perspective that clearly expresses its mission, fosters meaningful engagement across audiences, and strengthens fundraising efforts through a unified, inspiring, and visually consistent marketing strategy.",
         solutionPoints: [
           "Logo design: a message in a bottle to capture the essence of connecting different generations through a simple yet powerful visual.",
           "Extended the oceanic theme throughout the icon set and overall visual design for the platform.",
